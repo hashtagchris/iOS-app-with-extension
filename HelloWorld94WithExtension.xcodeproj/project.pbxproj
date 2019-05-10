@@ -56,6 +56,7 @@
 		53161A6422854E1900E241B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53161A6C22854EB000E241B1 /* HelloWorld94WithExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HelloWorld94WithExtension.entitlements; sourceTree = "<group>"; };
 		539749B72285C02F003E8E6F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		539749B92285E11D003E8E6F /* MyShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyShareExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +114,7 @@
 		53161A5E22854E1900E241B1 /* MyShareExtension */ = {
 			isa = PBXGroup;
 			children = (
+				539749B92285E11D003E8E6F /* MyShareExtension.entitlements */,
 				53161A5F22854E1900E241B1 /* ShareViewController.swift */,
 				53161A6122854E1900E241B1 /* MainInterface.storyboard */,
 				53161A6422854E1900E241B1 /* Info.plist */,
@@ -190,6 +192,11 @@
 					};
 					53161A5C22854E1900E241B1 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -446,6 +453,7 @@
 		53161A6922854E1900E241B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MyShareExtension/MyShareExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DJ8T2973U7;
 				INFOPLIST_FILE = MyShareExtension/Info.plist;
@@ -465,6 +473,7 @@
 		53161A6A22854E1900E241B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MyShareExtension/MyShareExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DJ8T2973U7;
 				INFOPLIST_FILE = MyShareExtension/Info.plist;
