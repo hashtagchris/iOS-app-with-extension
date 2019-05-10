@@ -16,6 +16,7 @@
 		53161A6322854E1900E241B1 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53161A6122854E1900E241B1 /* MainInterface.storyboard */; };
 		53161A6722854E1900E241B1 /* MyShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 53161A5D22854E1900E241B1 /* MyShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		539749B82285C02F003E8E6F /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 539749B72285C02F003E8E6F /* CloudKit.framework */; };
+		539749BA2285E65D003E8E6F /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 539749B72285C02F003E8E6F /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				539749BA2285E65D003E8E6F /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +195,9 @@
 					53161A5C22854E1900E241B1 = {
 						CreatedOnToolsVersion = 9.4.1;
 						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
 							com.apple.iCloud = {
 								enabled = 1;
 							};
